@@ -16,6 +16,9 @@ public class duplicateCharStream {
         System.out.println("Duplicate character::::"+duplicateCharacter);
     }
     private static List<String> findDuplicateCharacter(String input){
+
+        Map<String, Long> gg = Arrays.stream(input.split("")).collect(Collectors.groupingBy(ch -> ch, Collectors.counting()));
+
         return Arrays.stream(input.split("")).collect(Collectors.groupingBy(ch->ch , Collectors.counting()))
                 .entrySet().stream().filter(cha->cha.getValue()>1).map(Map.Entry::getKey).collect(Collectors.toList());
     }
