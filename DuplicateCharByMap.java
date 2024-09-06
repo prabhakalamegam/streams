@@ -3,7 +3,7 @@ package streams;
 import java.util.HashMap;
 import java.util.Map;
 
-public class duplicateCharByMap {
+public class DuplicateCharByMap {
 
     public static void main(String[] args) {
 
