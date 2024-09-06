@@ -5,11 +5,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class duplicateCharAndOccurrence {
+public class DuplicateCharAndOccurrence {
 
     public static void main(String[] args) {
         //duplicate character and its occurrence
-        String input ="prabhavathy kalamegam";
+        String input ="Java And Angular";
         Map<String, Long> ff = findDuplicateCharacterAndOccurance(input);
 
 
